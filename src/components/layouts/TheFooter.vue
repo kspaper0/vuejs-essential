@@ -59,6 +59,10 @@
 <script>
 // 引入 title.js 的默认值
 import title from '@/directives/title'
+import az from '../../assets/az.jpg'
+import fb from '../../assets/fb.jpg'
+import gg from '../../assets/gg.jpg'
+import tt from '../../assets/tt.jpg'
 
 export default {
   name: 'TheFooter',
@@ -99,24 +103,24 @@ export default {
         title: 'Sponsors',
         list: [
           {
-            logo: 'https://cdn.learnku.com/uploads/banners/bQawWl3vT5dc2lYx5JZ7.png',
-            title: 'Sponsored by UCloud',
-            link: 'http://www.ucloud.cn/?utm_source=zanzhu&utm_campaign=phphub&utm_medium=display&utm_content=yejiao&ytag=phphubyejiao'
+            logo: az,
+            title: 'Amazon',
+            link: 'https://www.amazon.com/'
           },
           {
-            logo: 'https://cdn.learnku.com/uploads/banners/yGLIR0idW7zsInjsNmzr.png',
-            title: 'Sponsored by CDN',
-            link: 'http://www.qiniu.com/?utm_source=phphub'
+            logo: fb,
+            title: 'Facebook',
+            link: 'http://www.facebook.com/'
           },
           {
-            logo: 'https://cdn.learnku.com/uploads/banners/XPtLlZmIN1cQbLuDFEON.png',
-            title: 'Sponsored by Composer',
-            link: 'https://www.upyun.com/'
+            logo: gg,
+            title: 'Google',
+            link: 'http://www.google.com/'
           },
           {
-            logo: 'https://cdn.learnku.com/uploads/banners/JpTCK6OKYBIrBIWdtob8.png',
-            title: 'Sponsored by SendCloud',
-            link: 'http://www.sendcloud.net/'
+            logo: tt,
+            title: 'Twitter',
+            link: 'http://www.twitter.com/'
           }
         ]
       },

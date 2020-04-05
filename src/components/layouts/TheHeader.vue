@@ -36,6 +36,7 @@
 import TheEntry from '@/components/layouts/TheEntry'
 // 引入 SearchInput.vue 默认值
 import SearchInput from '@/components/layouts/SearchInput'
+import logo from '../../assets/logo.png'
 
 export default {
   name: 'TheHeader',
@@ -50,17 +51,15 @@ export default {
   data() {
     return {
       logo: {
-        src: `${this.uploadsUrl}communities/hIZjRRdF8oVYZy69XJnT.png`,
-        title: 'VuejsCaff'
+        src: logo,
+        title: 'Sean\'s Vue'
       },
       navList: ['Topics', 'News', 'Info', 'Q & A'],
       activeNavIndex: 0,
       showCollapsedNav: false
     }
   },
-  beforeCreate() {
-    this.uploadsUrl = 'https://cdn.learnku.com/uploads/'
-  },
+
   methods: {
     changeNavIndex(index) {
       this.activeNavIndex = index

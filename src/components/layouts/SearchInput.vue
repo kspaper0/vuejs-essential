@@ -51,5 +51,8 @@ export default {
 </script>
 
 <style scoped>
-.search-input { background-image: url(https://cdn.learnku.com/assets/images/icon-search.png)}
+.search-input {
+  background-image: url(../../assets/search.jpg);
+  background-size:10px 10px;
+}
 </style>

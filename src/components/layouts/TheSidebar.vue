@@ -7,9 +7,9 @@
       <div class="panel-body">
         <Slider :slides="slides">
           <template slot-scope="{ currentSlide }">
-            <a :href="currentSlide.link" target="_blank">
+
               <img :alt="currentSlide.title" :title="currentSlide.title" :src="currentSlide.img">
-            </a>
+
           </template>
         </Slider>
       </div>
@@ -40,7 +40,7 @@
         <ul class="list">
           <li v-for="(article, index) in hotArticles">
             <router-link :to="`/articles/${article.articleId}/content`">
-              <span v-if="index === 0">?</span>
+              <span v-if="index === 0"><i class="fa fa-star" aria-hidden="true"></i></span>
               <span v-else>{{ index + 1 }}.</span>
               {{ article.title }}
             </router-link>
@@ -83,6 +83,9 @@
 </template>
 
 <script>
+import project1 from '../../assets/project1.png'
+import project2 from '../../assets/project2.png'
+import project3 from '../../assets/project3.png'
 export default {
   name: 'Sidebar',
   data() {
@@ -90,19 +93,19 @@ export default {
       // 实战课程
       slides: [
         {
-          title: 'Tutorial 1',
-          img: 'https://cdn.learnku.com/uploads/banners/YpxKKNlSPdmwotO3u8An.jpg',
-          link: 'https://learnku.com/laravel/t/3383/laravel-the-first-chinese-new-book-laravel-tutorial'
+          title: 'Project 1',
+          img: project1,
+
         },
         {
-          title: 'Tutorial 2',
-          img: 'https://cdn.learnku.com/uploads/banners/iNanVVOXdnYQ6jRfMdWE.png',
-          link: 'https://learnku.com/laravel/t/6592'
+          title: 'Project 2',
+          img: project2,
+
         },
         {
-          title: 'Tutorial 3',
-          img: 'https://cdn.learnku.com/uploads/banners/tEd4GxhMp6VMh9e0hrUH.jpg',
-          link: 'https://learnku.com/laravel/t/7657'
+          title: 'Project 3',
+          img: project3,
+
         }
       ],
       activeUsers: [], // 活跃用户
