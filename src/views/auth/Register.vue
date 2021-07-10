@@ -66,13 +66,15 @@ export default {
       this.localCaptcha = captcha
     },
     register(e) {
-      this.$nextTick(() => {
-        const target = e.target.type === 'submit' ? e.target : e.target.parentElement
+      setTimeout(() => {
+        this.$nextTick(() => {
+          const target = e.target.type === 'submit' ? e.target : e.target.parentElement
 
-        if (target.canSubmit) {
-          this.submit()
-        }
-      })
+          if (target.canSubmit) {
+            this.submit()
+          }
+        })
+      }, 100)
     },
     submit() {
       if (this.captcha.toUpperCase() !== this.localCaptcha) {
@@ -82,7 +84,8 @@ export default {
         const user = {
           name: this.username,
           password: this.password,
-          avatar: `https://api.adorable.io/avatars/200/${this.username}.png`
+          avatar: `https://ui-avatars.com/api/?name=${this.username}`
+          // https://ui-avatars.com/api/?name=Elon+Musk
         }
         // 修改
         // const localUser = ls.getItem('user')

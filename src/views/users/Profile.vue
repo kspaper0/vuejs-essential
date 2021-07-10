@@ -84,7 +84,7 @@ export default {
   },
   methods: {
     updateProfile(e) {
-      this.$nextTick(() => {
+      setTimeout(() => {
         if (e.target.canSubmit) {
           this.$store.dispatch('updateUser', {
             name: this.username,

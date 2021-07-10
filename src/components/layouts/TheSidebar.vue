@@ -69,10 +69,10 @@
 
       <div class="panel panel-default corner-radius">
         <div class="panel-body text-center">
-          <a href="mailto:sean@test.com" style="color:#a5a5a5">
+          <a href="mailto:sean.kangaroo@gmail.com" style="color:#a5a5a5">
             <span style="margin-top: 7px;display: inline-block;">
               <i class="fa fa-heart" style="color: rgba(232, 146, 136, 0.89);"></i>
-              Mail Sean
+              Mail Me
             </span>
           </a>
         </div>

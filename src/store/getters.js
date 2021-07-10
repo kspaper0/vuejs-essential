@@ -7,7 +7,8 @@ export const computedArticles = (state) => {
   const addUserInfo = function(isCurrentUser) {
     const userName = state.user && state.user.name
     const userAvatar = state.user && state.user.avatar
-    const avatarUrl = 'https://api.adorable.io/avatars/200/'
+    //const avatarUrl = 'https://api.adorable.io/avatars/200/'
+    const avatarUrl = 'https://ui-avatars.com/api/?name='
 
     // 是当前用户时，设置用户数据为当前用户的信息
     if (isCurrentUser) {

@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     login(e) {
-      this.$nextTick(() => {
+      setTimeout(() => {
         const target = e.target.type === 'submit' ? e.target : e.target.parentElement
 
         if (target.canSubmit) {

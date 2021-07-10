@@ -13,7 +13,7 @@
           </div>
           <div class="form-group row">
             <div class="col-md-8">
-              <input v-model.trim.lazy="avatar" v-validator.required="{ title: 'Address' }" type="text" class="form-control avatar-input">
+              <input v-model.trim.lazy="avatar" v-validator.required="{ title: 'Path' }" type="text" class="form-control avatar-input">
             </div>
             <div class="clearfix"></div>
           </div>

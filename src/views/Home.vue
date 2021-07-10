@@ -69,11 +69,11 @@ export default {
       articles: [], // 文章列表
       filter: 'default', // 默认过滤方式
       filters: [ // 过滤方式列表
-        { filter: 'default', name: 'Tab 1', title: 'Sorted by Recent Reply'},
-        { filter: 'excellent', name: 'Tab 2', title: 'Artilces of ID 1'},
-        { filter: 'vote', name: 'Tab 3', title: 'Sorted by The Number of Likes'},
-        { filter: 'recent', name: 'Tab 4', title: 'Sorted by Recent Posts'},
-        { filter: 'noreply', name: 'Tab 5', title: 'Sorted by The Number of Comments'}
+        { filter: 'default', name: 'Active', title: 'Last Reply'},
+        { filter: 'excellent', name: 'Featured', title: 'Featured Topics'},
+        { filter: 'vote', name: 'Popular', title: 'Mostly Liked'},
+        { filter: 'recent', name: 'Recent', title: 'Recent Posts'},
+        { filter: 'noreply', name: 'Others', title: 'Nil Replies'}
       ],
       total: 0, // 文章总数
       pageSize: 20, // 每页条数

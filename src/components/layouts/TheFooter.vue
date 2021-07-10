@@ -18,7 +18,7 @@
 
         <div class="col-sm-6 col-lg-6 col-lg-offset-1">
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-xs-4">
               <h4>{{ sponsor.title }}</h4>
 
               <ul class="list-unstyled">
@@ -30,15 +30,15 @@
               </ul>
             </div>
 
-            <div class="col-sm-4">
+<!--             <div class="col-sm-4">
               <h4>{{ statistics.title }}</h4>
 
               <ul class="list-unstyled">
                 <li v-for="item in statistics.list">{{ item.title }}: {{ item.description }}</li>
               </ul>
-            </div>
+            </div> -->
 
-            <div class="col-sm-4">
+            <div class="col-xs-4">
               <h4>{{ other.title }}</h4>
 
               <ul class="list-unstyled">
@@ -77,17 +77,17 @@ export default {
         {
           icon: 'envelope',
           title: 'Email Me',
-          link: 'mailto:sean@test.com'
+          link: 'mailto:sean.kangaroo@gmail.com'
         },
         {
-          icon: 'weibo',
+          icon: 'linkedin',
           title: 'Social',
-          link: 'http://www.baidu.com'
+          link: 'http://www.linkedin.com/in/Shuo-Kang'
         },
         {
           icon: 'weixin',
-          title: 'Wechat',
-          link: 'http://www.baidu.com'
+          title: '15380324',
+          link: '#'
         }
       ],
       contactStyle: {
@@ -124,23 +124,23 @@ export default {
           }
         ]
       },
-      statistics: {
-        title: 'Statistics',
-        list: [
-          {
-            title: 'Members',
-            description: '22889'
-          },
-          {
-            title: 'Topics',
-            description: '7397'
-          },
-          {
-            title: 'Comments',
-            description: '39375'
-          }
-        ]
-      },
+      // statistics: {
+      //   title: 'Statistics',
+      //   list: [
+      //     {
+      //       title: 'Members',
+      //       description: '22889'
+      //     },
+      //     {
+      //       title: 'Topics',
+      //       description: '7397'
+      //     },
+      //     {
+      //       title: 'Comments',
+      //       description: '39375'
+      //     }
+      //   ]
+      // },
       other: {
         title: 'Other Info.',
         list: [

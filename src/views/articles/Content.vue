@@ -253,7 +253,7 @@ export default {
       if (!this.auth) {
         this.$swal({
           text: 'Please login first',
-          confirmButtonText: 'Go to'
+          confirmButtonText: 'Proceed'
         }).then((res) => {
           if (res.value) {
             this.$router.push('/auth/login')
